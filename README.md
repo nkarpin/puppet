@@ -1,1 +1,1 @@
-# puppet
+# Puppet manifests examples
