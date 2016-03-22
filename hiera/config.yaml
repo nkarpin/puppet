@@ -1,0 +1,18 @@
+---
+files:
+    config_server1:
+       config_info:
+          connection1:
+              ip: "208.67.222.222"
+              uptest: "query"
+              timeout: 10
+          connection2:
+              ip: "208.67.220.220"
+              uptest: "query"
+              timeout: 10
+    config_server2:
+       config_info:
+          connection1:
+              ip: "8.8.8.8"
+              uptest: "exec"
+              timeout: 10
