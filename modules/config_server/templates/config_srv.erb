@@ -1,11 +1,11 @@
 
-<% @config_info.each_pair do |label, server| %>
+<% @config_info.each_pair do |key, value| %>
 server {
-	label=<%= label %>;
-	ip=<%= server['ip'] %>;				
-	timeout=<%= server['timeout'] %>;	
-	<% if server['uptest'] -%>
-	uptest=<%= server['uptest'] %>;
+	label=<%= key %>;
+	ip=<%= value['ip'] %>;
+	timeout=<%= value['timeout'] %>;
+	<% if value['uptest'] -%>
+	uptest=<%= value['uptest'] %>;
 	<% end -%>
 }
 <% end %>
